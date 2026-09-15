@@ -2,93 +2,247 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#06100d">
 <title>Pay Off Your House Fast — see the day your mortgage ends</title>
-<meta name="description" content="A private mortgage payoff planner for iPhone. See your payoff date, compare extra-payment strategies, and know the true cost of owning.">
-<link rel="stylesheet" href="style.css?v=1">
+<meta name="description" content="A private mortgage payoff planner for iPhone. See your payoff date, compare six extra-payment strategies, print your amortization schedule and know the true cost of owning.">
+<meta property="og:title" content="Pay Off Your House Fast">
+<meta property="og:description" content="See the day your mortgage ends — and how much sooner a few extra dollars gets you there.">
+<meta property="og:image" content="https://snrgwa-bot.github.io/house-payoff/assets/og.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6810142825">
+<link rel="icon" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="stylesheet" href="style.css?v=2">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Pay Off Your House Fast","operatingSystem":"iOS","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Essential Dev Team","url":"https://essentialdevteam.com/"}}
+</script>
 </head>
 <body>
+<div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+
 <nav class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="index.html"><span class="brand-mark">&#127968;</span> House Payoff</a>
+    <a class="brand" href="index.html"><img src="assets/icon.png" alt=""> House Payoff</a>
     <div class="nav-links">
-      <a href="index.html#features">Features</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
       <a href="support.html">Support</a>
       <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
+      <a class="nav-cta" href="https://apps.apple.com/app/id6810142825">Get the app</a>
     </div>
   </div>
 </nav>
+
 <header class="hero">
-  <div class="wrap">
-    <h1>See the day your mortgage ends.</h1>
-    <p class="lede">Enter your balance, rate and payment once. Pay Off Your House Fast shows your payoff
-       date, how much interest is still ahead, and exactly how much sooner a few extra dollars a month
-       gets you there. Everything stays on your iPhone.</p>
-    <p><a class="btn" href="#features">What it does</a> <a class="btn ghost" href="support.html">Support</a></p>
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow"><span class="dot"></span> Mortgage payoff planner for iPhone</span>
+      <h1>See the day your mortgage <span class="grad">ends.</span></h1>
+      <p class="lede">Enter your balance, rate and payment once. Pay Off Your House Fast shows your payoff date,
+         the interest still ahead, and exactly how much sooner a few extra dollars gets you there.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://apps.apple.com/app/id6810142825">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.77-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.28-1.6 2.78-.41 6.9 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.77-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.39-3.68zM14.1 5.84c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.6-2.66 1.37-.58.67-1.1 1.76-.96 2.8 1.01.08 2.05-.52 2.68-1.28z"/></svg>
+          <span><small>Download on the</small><b>App Store</b></span>
+        </a>
+        <a class="btn btn-ghost" href="#features">See how it works</a>
+      </div>
+      <div class="trust"><span>No account</span><span>No bank login</span><span>No tracking</span></div>
+    </div>
+
+    <div class="phone-stage reveal">
+      <div class="float-chip a"><strong>Dec 2038</strong>new payoff date</div>
+      <div class="phone">
+        <div class="screen" id="rotator">
+          <img class="on" src="assets/shots/home.jpg" alt="Home screen showing the payoff date, progress and total left to pay">
+          <img src="assets/shots/plan.jpg" alt="Plan screen comparing payoff strategies" loading="lazy">
+          <img src="assets/shots/schedule.jpg" alt="Amortization schedule grouped by year" loading="lazy">
+          <img src="assets/shots/costs.jpg" alt="True cost of owning, with tax, insurance and HOA" loading="lazy">
+        </div>
+      </div>
+      <div class="float-chip b"><strong>−$<span class="count" data-to="13506">0</span></strong>interest saved</div>
+    </div>
   </div>
 </header>
 
-<section id="features" class="wrap section">
-  <h2>What it does</h2>
+<section class="wrap" aria-label="An example">
+  <div class="stats">
+    <div class="stat reveal"><div class="num">$<span class="count" data-to="250">0</span></div><p>extra a month, on a $262k balance at 4.25%</p></div>
+    <div class="stat reveal"><div class="num"><span class="count" data-to="25">0</span> mo</div><p>sooner to mortgage-free</p></div>
+    <div class="stat reveal"><div class="num">$<span class="count" data-to="13506">0</span></div><p>less interest paid</p></div>
+    <div class="stat reveal"><div class="num"><span class="count" data-to="6">0</span></div><p>strategies to compare</p></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="sec-head reveal">
+    <h2>Watch the balance fall faster.</h2>
+    <p>The same loan, paid as scheduled and with $250 extra each month. The gap at the end is the part of your
+       life you stop spending on a mortgage.</p>
+  </div>
+  <div class="chart-card reveal" id="chart">
+    <svg viewBox="0 0 700 300" role="img" aria-label="Chart: remaining balance falls to zero about two years sooner with extra payments">
+      <defs>
+        <linearGradient id="planFill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#5dd3a8" stop-opacity=".28"/>
+          <stop offset="1" stop-color="#5dd3a8" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <g stroke="rgba(255,255,255,.06)">
+        <line x1="40" y1="30" x2="680" y2="30"/><line x1="40" y1="110" x2="680" y2="110"/>
+        <line x1="40" y1="190" x2="680" y2="190"/><line x1="40" y1="270" x2="680" y2="270"/>
+      </g>
+      <g fill="#6d7f78" font-size="12">
+        <text x="0" y="34">$262k</text><text x="0" y="274">$0</text>
+        <text x="40" y="294">Today</text><text x="630" y="294">15 yrs</text>
+      </g>
+      <path id="planArea" class="area-plan"/>
+      <path id="basePath" class="line-base" pathLength="1000"/>
+      <path id="planPath" class="line-plan" pathLength="1000"/>
+      <g class="marker" id="marker">
+        <circle r="7" fill="#5dd3a8"/>
+        <text dy="-16" text-anchor="middle" fill="#eaf1ed" font-size="13" font-weight="700">Mortgage-free</text>
+      </g>
+    </svg>
+    <div class="chart-legend">
+      <span><i style="background:#6d7f78"></i>As scheduled</span>
+      <span><i style="background:#5dd3a8"></i>With $250 extra a month</span>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="wrap">
+  <div class="sec-head center reveal">
+    <h2>Everything about your mortgage, on one iPhone.</h2>
+    <p>Real screens from the app, running on an example loan.</p>
+  </div>
+
+  <div class="feature reveal">
+    <div class="shot"><img src="assets/shots/home.jpg" alt="Home screen" loading="lazy"></div>
+    <div>
+      <span class="tag">Home</span>
+      <h3>Your payoff date, in plain sight.</h3>
+      <p>The month your mortgage ends, the share already paid off, the interest still to come and the total
+         left to pay &mdash; the first thing you see.</p>
+      <ul class="ticks"><li>Payoff ring and equity at a glance</li><li>Log extra payments as you make them</li><li>Milestones at 25, 50, 75% and mortgage-free</li></ul>
+    </div>
+  </div>
+
+  <div class="feature reveal">
+    <div class="shot"><img src="assets/shots/plan.jpg" alt="Plan screen with payoff strategies" loading="lazy"></div>
+    <div>
+      <span class="tag">Plan</span>
+      <h3>Six ways to finish sooner.</h3>
+      <p>Extra each month on a slider, round up the payment, one extra payment a year, biweekly, weekly, or a
+         single lump sum. Every option shows its own payoff date and saving before you pick it.</p>
+      <ul class="ticks"><li>Biweekly and weekly modelled on real 26 and 52 periods</li><li>Time saved measured between actual payoff dates</li></ul>
+    </div>
+  </div>
+
+  <div class="feature reveal">
+    <div class="shot"><img src="assets/shots/schedule.jpg" alt="Amortization schedule" loading="lazy"></div>
+    <div>
+      <span class="tag">Schedule</span>
+      <h3>A schedule you can print.</h3>
+      <p>The full amortization schedule grouped by year, with a plan-versus-base toggle so you can see every
+         payment move. Export it as a PDF for your records or your lender.</p>
+    </div>
+  </div>
+
+  <div class="feature reveal">
+    <div class="shot"><img src="assets/shots/costs.jpg" alt="True cost of owning" loading="lazy"></div>
+    <div>
+      <span class="tag pro">Pro</span>
+      <h3>The true cost of owning.</h3>
+      <p>Property tax, insurance, HOA dues and a maintenance reserve alongside the loan &mdash; including what
+         carries on every month after the mortgage is gone. Log repairs so surprises are budgeted.</p>
+    </div>
+  </div>
+
+  <div class="feature reveal">
+    <div class="shot"><img src="assets/shots/afford.jpg" alt="Affordability calculator" loading="lazy"></div>
+    <div>
+      <span class="tag">Buying next?</span>
+      <h3>Know what you can afford.</h3>
+      <p>Work backwards from income, deposit and existing debts &mdash; credit cards, car and student loans
+         &mdash; to a realistic price. See which lender rule caps you, and what clearing a debt would buy.</p>
+    </div>
+  </div>
+</section>
+
+<section aria-label="More screens">
+  <div class="gallery reveal">
+    <div class="gallery-track" id="gallery"></div>
+  </div>
+</section>
+
+<section class="wrap">
   <div class="grid">
-    <div class="card">
-      <h3>Your payoff date, in plain sight</h3>
-      <p>One screen: the month your mortgage ends, the share you have already paid off, the interest
-         still to come, and the total left to pay.</p>
+    <div class="card reveal"><div class="ico">🔒</div><h3>Private by design</h3><p>Your loan is written to your iPhone and never leaves it. There is no server holding it.</p></div>
+    <div class="card reveal"><div class="ico">📐</div><h3>Honest maths</h3><p>Standard amortization, real payment cadences, and the assumptions shown rather than hidden.</p></div>
+    <div class="card reveal"><div class="ico">🧾</div><h3>From your statement</h3><p>Five numbers from your latest mortgage statement are all it takes to start.</p></div>
+    <div class="card reveal"><div class="ico">🌙</div><h3>Built for iPhone</h3><p>Light and dark mode, Dynamic Type and VoiceOver, and a printable PDF when you need paper.</p></div>
+  </div>
+</section>
+
+<section id="pricing" class="wrap">
+  <div class="sec-head center reveal">
+    <h2>Free to plan. Pro to go further.</h2>
+  </div>
+  <div class="tiers">
+    <div class="tier free reveal">
+      <h3>Free</h3>
+      <p class="note">Everything you need to see your date.</p>
+      <ul>
+        <li>Your payoff date and progress</li>
+        <li>Extra-monthly simulator</li>
+        <li>Full amortization schedule</li>
+        <li>Affordability calculator</li>
+      </ul>
     </div>
-    <div class="card">
-      <h3>Six ways to finish sooner</h3>
-      <p>Extra each month, round up the payment, one extra payment a year, biweekly, weekly, or a
-         single lump sum. Each option shows its own payoff date and saving before you pick it.</p>
+    <div class="tier pro reveal">
+      <span class="badge">Pro</span>
+      <h3>House Payoff Pro</h3>
+      <p class="note">Monthly or yearly subscription.</p>
+      <ul>
+        <li>All six payoff strategies</li>
+        <li>Side-by-side strategy comparison</li>
+        <li>True cost of ownership</li>
+        <li>Printable PDF export</li>
+      </ul>
     </div>
-    <div class="card">
-      <h3>Honest biweekly maths</h3>
-      <p>Biweekly and weekly plans are modelled on their real 26 and 52 payment periods, not a monthly
-         approximation, so the numbers hold up.</p>
-    </div>
-    <div class="card">
-      <h3>The true cost of owning</h3>
-      <p>Property tax, insurance, HOA dues and a maintenance reserve alongside the loan &mdash; including
-         what carries on after the mortgage is gone.</p>
-    </div>
-    <div class="card">
-      <h3>A schedule you can print</h3>
-      <p>The full amortization schedule, grouped by year, with a PDF export.</p>
-    </div>
-    <div class="card">
-      <h3>What you can afford</h3>
-      <p>Work backwards from income, deposit and existing debts &mdash; credit cards, car and student
-         loans &mdash; to a realistic home price, and see which lender rule caps you.</p>
+  </div>
+  <p class="fine reveal">Payment is charged to your Apple ID at confirmation of purchase. Subscriptions renew automatically unless
+     cancelled at least 24 hours before the end of the current period, and are managed in your Apple ID settings.
+     <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (EULA)</a> &middot;
+     <a href="privacy.html">Privacy Policy</a>. Projections are estimates, not financial advice.</p>
+</section>
+
+<section class="wrap">
+  <div class="strip reveal">
+    <h2>Find out when you'll own it outright.</h2>
+    <p>No account, no bank login. Just your numbers, on your iPhone.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://apps.apple.com/app/id6810142825"><span><small>Download on the</small><b>App Store</b></span></a>
+      <a class="btn btn-ghost" href="support.html">Questions? Support</a>
     </div>
   </div>
 </section>
 
-<section class="wrap section">
-  <h2>Private by design</h2>
-  <div class="callout">
-    <p><strong>No account. No bank connection. No tracking.</strong> Your loan details are written to your
-       iPhone and never leave it. There is no server to hold them, and we have no way to read them.</p>
-  </div>
-</section>
-
-<section class="wrap section">
-  <h2>Pricing</h2>
-  <div class="card">
-    <p>The payoff date, the extra-payment simulator, the amortization schedule and the affordability
-       calculator are free. Pro unlocks the other payoff strategies, the true cost of ownership and the
-       printable PDF export.</p>
-    <p class="fine">Subscriptions renew automatically unless cancelled at least 24 hours before the end of
-       the current period, and are managed in your Apple ID settings.</p>
-  </div>
-</section>
-<footer class="foot">
-  <div class="wrap">
-    <p>Pay Off Your House Fast is published by Essential Dev Team.
-       <a href="mailto:essentialdevteam@gmail.com">essentialdevteam@gmail.com</a></p>
-    <p class="fine"><a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="support.html">Support</a></p>
+<footer>
+  <div class="wrap foot-row">
+    <span>&copy; 2026 Essential Dev Team</span>
+    <div class="links">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="https://apps.apple.com/us/developer/dumitru-bumbu/id1868107712">More apps</a>
+    </div>
   </div>
 </footer>
+
+<script src="site.js?v=2"></script>
 </body>
 </html>
